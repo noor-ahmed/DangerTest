@@ -3,7 +3,6 @@
 
 project_settings:
   env_variables:
-    DOCKER_IMAGE: <The docker image name on the registry>
     DANGER_GITHUB_API_TOKEN: 'TOKEN'
 
   build_settings:
@@ -32,6 +31,5 @@ project_settings:
 
 server_settings:
   deployment:
-    - heroku container:push --arg BRANCH_TAG=${BRANCH_NAME/\//-} --recursive
     - bundle exec danger
     - bundle exec rspec
