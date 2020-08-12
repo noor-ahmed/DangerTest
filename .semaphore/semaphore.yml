@@ -68,7 +68,7 @@
 
 version: v1.0
 
-name: Danger Implementation
+name: Dangertest
 agent:
   machine:
     type: e1-standard-2
@@ -79,7 +79,7 @@ global_job_config:
     - name: RAILS_ENV
       value: test
   secrets:
-    - name: danger_implementation
+    - name: Dangertest
   prologue:
     commands:
       - checkout
